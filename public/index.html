@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница со списком сценариев</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    /* Дополнительные стили для кастомизации */
+    .status-panel {
+      padding: 1rem;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+    .online {
+      background-color: #48c774; /* Зеленый для онлайн */
+    }
+    .offline {
+      background-color: #f14668; /* Красный для оффлайн */
+    }
+    .active-scenario {
+      background-color: #f5f5f5; /* Подсветка активного сценария */
+    }
+  </style>
+</head>
+<body>
+  <!-- Цветная панель статуса -->
+  <header class="status-panel online"> <!-- Меняйте класс на "offline" для красного цвета -->
+    Статус: Онлайн
+  </header>
+
+  <!-- Список сценариев -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Список сценариев</h1>
+      <div class="list is-hoverable">
+        <!-- Элементы списка -->
+        <a href="#" class="list-item">Сценарий 1</a>
+        <a href="#" class="list-item active-scenario">Сценарий 2 (активный)</a>
+        <a href="#" class="list-item">Сценарий 3</a>
+        <a href="#" class="list-item">Сценарий 4</a>
+        <a href="#" class="list-item">Сценарий 5</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
